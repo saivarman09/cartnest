@@ -44,26 +44,3 @@ The planned application consists of three main components:
 3. **Database:** PostgreSQL persistence for application data.
 
 The application will first run locally. It will then be containerized and deployed to a local Kubernetes cluster. Development and production configurations will be introduced before progressing to cloud infrastructure.
-
-## Repository layout
-
-```text
-cartnest/
-├── frontend/
-├── backend/
-│   ├── app/
-│   └── tests/
-├── database/
-│   └── migrations/
-├── tests/
-│   └── integration/
-├── k8s/
-│   ├── base/
-│   └── overlays/
-│       ├── development/
-│       └── production/
-├── docs/
-├── .github/
-│   └── workflows/
-├── .gitignore
-└── README.md
