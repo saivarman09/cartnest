@@ -1,0 +1,35 @@
+cat > .gitignore <<'EOF'
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# Editors and operating system
+.DS_Store
+.vscode/
+.idea/
+
+# Local runtime data
+postgres-data/
+*.log
+
+# Kubernetes local artifacts
+kind-config.local.yaml
+EOF
