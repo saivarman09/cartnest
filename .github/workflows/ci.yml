@@ -49,6 +49,7 @@ jobs:
         with:
           context: ./backend
           file: ./backend/dockerfile
+          platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
           tags: |
             ghcr.io/${{ github.repository_owner }}/cartnest-api:latest
